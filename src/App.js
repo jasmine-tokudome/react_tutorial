@@ -1,10 +1,6 @@
 // Appコンポーネントの定義
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello, world!</h1>
-    </div>
-  );
+export default function Square() {
+  return <button className="square">X</button>;
 }
 
 // Appコンポーネントを他のファイルで利用できるようにエクスポート
