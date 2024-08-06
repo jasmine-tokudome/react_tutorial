@@ -16,18 +16,9 @@ export default function Board() {
   const [squares, setSquares] = useState(Array(9).fill(null));
 
   function handleClick(i) {
-    onst nextSquares = squares.slice();
-    nextSquares[0] = "X";
-    setSquares(nextSquares);
-s    }
     const nextSquares = squares.slice();
-    if (xIsNext) {
-      nextSquares[i] = "X";
-    } else {
-      nextSquares[i] = "O";
-    }
+    nextSquares[i] = "X";
     setSquares(nextSquares);
-    setXIsNext(!xIsNext);
   }
 
   return (
