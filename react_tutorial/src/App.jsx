@@ -19,7 +19,7 @@ export default function Boad() {
 
   function handleClick() {
     const nextSquares = squares.slice();
-    nextSquares[0] = "X";
+    nextSquares[i] = "X";
     setSquares(nextSquares);
   }
 
