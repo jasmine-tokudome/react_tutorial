@@ -1,17 +1,17 @@
 import { useState } from 'react';
 
-function Square({value, onSquareClick}) {
-  const [value, setValue] = useState(null)
-
-  return <button 
+function Square({ value, onSquareClick }) {
+  return (
+    <button 
     className="square"
     onClick={onSquareClick}
     >
     {value}
     </button>
+  );
 }
 
-export default function Board() {
+export default function () {
   const [squares,setSquares] = useState(Array(9).fill(null));
 
   function handleClick(i) {
