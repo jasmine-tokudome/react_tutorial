@@ -55,6 +55,7 @@ function Board ({ xIsNext, squares, onPlay }) {
   );
 }
 
+export defailt function Game() {
 function calculateWinner(squares) {
   const lines = [
     [0,1,2]
@@ -74,6 +75,8 @@ function calculateWinner(squares) {
   }
   return null;
 }
+}
+
 
 export default function Game() {
   const [xIsNext, setXIsNext] = useState(true);
